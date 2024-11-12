@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mickey Rodents Cult Contract</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #111; color: #fff; text-align: center; padding: 50px;">
+
+    <h1>The Mickey Rodents Contract</h1>
+
+    <p>By signing this contract, you will sell your soul to the Mickey Mouse gods and will join the cult “The Mickey Rodents”. You will join a Discord server (must be 13 or older) to join the cult. The second you join, your soul will be taken by the Mickey Mouse gods and sold on the black market. Don’t be afraid; it will go to a dead person and will create a ghost! So when you type your name below, you will officially be a part of The Mickey Rodents!</p>
+
+    <form id="soulContractForm">
+        <label for="name" style="font-size: 18px; display: block; margin-top: 20px;">Type your name:</label>
+        <input type="text" id="name" name="name" required style="padding: 10px; font-size: 16px; margin-top: 10px;">
+        <button type="submit" style="padding: 10px 20px; font-size: 18px; margin-top: 20px; background-color: #ff4444; color: #fff; border: none; cursor: pointer;">Sign the Contract</button>
+    </form>
+
+    <script>
+        document.getElementById("soulContractForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+            const name = document.getElementById("name").value;
+            if (name) {
+                window.location.href = "https://discord.gg/73s5EfkZaq";
+            } else {
+                alert("Please enter your name to sign the contract!");
+            }
+        });
+    </script>
+
+</body>
+</html>
